@@ -6,8 +6,9 @@ public class App {
 		Carro carro = new Carro();
 		carro.setVelocidadeInicial(10);
 		carro.acelerar(15);
+		carro.desligaMotor();
 		
-		System.out.println(carro.getVelocidadeAtual());
+		System.out.println(carro);
 
 	}
 

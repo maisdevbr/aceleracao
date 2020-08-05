@@ -17,7 +17,7 @@ public class Carro {
 		if(valor < velocidadeMaxima && valor > velocidadeAtual) {
 			this.velocidadeAtual += valor;
 		}
-		return velocidadeAtual;
+		return velocidadeAtual += velocidadeInicial;
 		
 	}
 	public boolean desligaMotor() {
@@ -31,15 +31,8 @@ public class Carro {
 		if ( velocidadeAtual > valor) {
 			velocidadeAtual -= 5;
 		}
-		return velocidadeAtual;
+		return velocidadeInicial - velocidadeAtual;
 		
-	}
-
-
-	@Override
-	public String toString() {
-		return "Carro [velocidadeInicial=" + velocidadeInicial + ", velocidadeAtual=" + velocidadeAtual
-				+ ", velocidadeMaxima=" + velocidadeMaxima + ", motorLigado=" + motorLigado + "]";
 	}
 
 
@@ -49,7 +42,7 @@ public class Carro {
 
 
 	public int getVelocidadeAtual() {
-		return velocidadeAtual += velocidadeInicial;
+		return this.velocidadeAtual;
 	}
 
 
@@ -74,5 +67,14 @@ public class Carro {
 	public void setMotorLigado(boolean motorLigado) {
 		this.motorLigado = motorLigado;
 	}
+
+
+	@Override
+	public String toString() {
+		return "Carro [velocidadeInicial=" + velocidadeInicial + ", velocidadeAtual=" + velocidadeAtual
+				+ ", velocidadeMaxima=" + velocidadeMaxima + ", motorLigado=" + motorLigado + "]";
+	}
+	
+	
 	
 }
