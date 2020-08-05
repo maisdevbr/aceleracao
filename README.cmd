@@ -1,7 +1,10 @@
-#Método aceleração
+# MÃ©todo aceleraÃ§Ã£o
 
-## velocidade inicial = 5
+* velocidade inicial = 0
 
-*break velocidade < 0
+* break velocidade < 0
 
-*velocidade máxima 200
+* velocidade mÃ¡xima 200
+
+* Tutorial https://danielwildt.wordpress.com/2020/07/26/trocando-o-branch-master-para-main-no-git/
+
