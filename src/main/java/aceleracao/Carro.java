@@ -27,12 +27,8 @@ public class Carro {
 		return false;
 	}
 	
-	public int desacelerar(int valor) {
-		if ( velocidadeAtual > valor) {
-			velocidadeAtual -= 5;
-		}
-		return velocidadeInicial - velocidadeAtual;
-		
+	public int desacelerar( ) {
+		return velocidadeAtual -= 5;
 	}
 
 

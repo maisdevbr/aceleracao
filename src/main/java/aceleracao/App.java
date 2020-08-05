@@ -7,6 +7,7 @@ public class App {
 		carro.setVelocidadeInicial(10);
 		carro.acelerar(15);
 		carro.desligaMotor();
+		carro.desacelerar();
 		
 		System.out.println(carro);
 
